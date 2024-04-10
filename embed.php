@@ -88,6 +88,7 @@ $PAGE->set_title(format_string($content['title']));
 $PAGE->set_heading($course->fullname);
 
 // Embed specific page setup.
+$PAGE->activityheader->disable();
 $PAGE->add_body_class('h5p-embed');
 $PAGE->set_pagelayout('embedded');
 $root = \mod_hvp\view_assets::getsiteroot();
